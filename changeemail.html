@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div>Change Email</div>
+	{% if currentemail %}
+        	<div>Current Email: {{currentemail}}</div>
+    {% endif %}
+	<form action="" method="post">
+	    <label>New Email</label>
+	    <input type="text" name="email" value="{{ request.form.email }}">
+	    <input type="submit" value="Change Email">
+    </form>
+        {% if error %}
+        	<div>Error: {{error}}</div>
+        {% endif %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div>Products</div>
+{% if productlist %}
+	<div>Select a product to purchase: {{productlist | safe}}</div>
+{% endif %}
+{% if purchased %}
+	<div>Products you've purchased: {{purchased | safe}}</div>
+{% endif %}
+</body>
+</html>
